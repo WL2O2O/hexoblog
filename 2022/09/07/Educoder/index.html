@@ -25,9 +25,9 @@
 <meta property="og:site_name" content="WLei224的blog">
 <meta property="og:description" content="写在前面：  ​                【免责声明：】本笔记发表在hexo博客只便于个人学习使用，若涉及到版权，请联系个人，谢谢！ educoder头歌Java笔记Coding中遇到的问题合集：““.equals(name) 和name.equals(““) 的区别： ​        两个都是比较“”的地址和name的地址是否指向同一个地址，即判断name是否为“”；建议用前者，因为n">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="c:/Users/WLei224/AppData/Roaming/Typora/typora-user-images/image-20220617145157883.png">
-<meta property="og:image" content="c:/Users/WLei224/AppData/Roaming/Typora/typora-user-images/image-20220617152252543.png">
-<meta property="og:image" content="c:/Users/WLei224/AppData/Roaming/Typora/typora-user-images/image-20220617152333029.png">
+<meta property="og:image" content="https://wl2o2o.github.io/2022/09/07/Educoder/Users/WLei224/AppData/Roaming/Typora/typora-user-images/image-20220617145157883.png">
+<meta property="og:image" content="https://wl2o2o.github.io/2022/09/07/Educoder/Users/WLei224/AppData/Roaming/Typora/typora-user-images/image-20220617152252543.png">
+<meta property="og:image" content="https://wl2o2o.github.io/2022/09/07/Educoder/Users/WLei224/AppData/Roaming/Typora/typora-user-images/image-20220617152333029.png">
 <meta property="og:image" content="https://img-blog.csdn.net/20170331095210507?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzUyNDY2MjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="https://data.educoder.net/api/attachments/189112">
 <meta property="og:image" content="https://data.educoder.net/api/attachments/189205">
@@ -46,7 +46,7 @@
 <meta property="article:author" content="WLei224">
 <meta property="article:tag" content="educoder">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="c:/Users/WLei224/AppData/Roaming/Typora/typora-user-images/image-20220617145157883.png">
+<meta name="twitter:image" content="https://wl2o2o.github.io/2022/09/07/Educoder/Users/WLei224/AppData/Roaming/Typora/typora-user-images/image-20220617145157883.png">
   <!-- Canonical links -->
   <link rel="canonical" href="https://wl2o2o.github.io/2022/09/07/Educoder/index.html">
   
@@ -425,7 +425,7 @@
 <h2 id="对象的构造方法实例"><a href="#对象的构造方法实例" class="headerlink" title="对象的构造方法实例"></a>对象的构造方法实例</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		<span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		<span class="type">String</span> <span class="variable">name</span> <span class="operator">=</span> sc.next();</span><br><span class="line">		<span class="type">String</span> <span class="variable">sex</span> <span class="operator">=</span> sc.next();</span><br><span class="line">		<span class="comment">/****** Begin ******/</span></span><br><span class="line">		<span class="comment">//分别使用两种构造器来创建Person对象  </span></span><br><span class="line">		Person a=<span class="keyword">new</span> <span class="title class_">Person</span>();</span><br><span class="line">		Person b=<span class="keyword">new</span> <span class="title class_">Person</span>(name,sex);</span><br><span class="line">		<span class="comment">/****** End ******/</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//创建Person对象，并创建两种构造方法</span></span><br><span class="line"><span class="comment">/****** Begin ******/</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span>&#123;																	<span class="keyword">class</span> <span class="title class_">swap</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="title function_">Person</span><span class="params">()</span>&#123;																<span class="keyword">public</span> <span class="title function_">swap</span><span class="params">(<span class="type">int</span> a,<span class="type">int</span> b,<span class="type">int</span> c)</span>&#123;</span><br><span class="line">		System.out.println(<span class="string">&quot;一个人被创建了&quot;</span>);							c=a;a=b;b=c;</span><br><span class="line"></span><br><span class="line">​	&#125;</span><br><span class="line">​	<span class="keyword">public</span> <span class="title function_">Person</span><span class="params">(String name,String sex)</span>&#123;</span><br><span class="line">​		System.out.println(<span class="string">&quot;姓名：&quot;</span>+name+<span class="string">&quot;，性别：&quot;</span>+sex+<span class="string">&quot;，被创建了&quot;</span>);</span><br><span class="line">​	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/****** End ******/</span></span><br></pre></td></tr></table></figure>
 
 <p>千万注意！！！！！<br>变量名字一定看清楚，上面的代码中，误将name写成了neme!!!!!</p>
-<p><img src="C:\Users\WLei224\AppData\Roaming\Typora\typora-user-images\image-20220617145157883.png" alt="image-20220617145157883"></p>
+<p><img src="/2022/09/07/Educoder/Users\WLei224\AppData\Roaming\Typora\typora-user-images\image-20220617145157883.png" alt="image-20220617145157883"></p>
 <p><code>JAVA</code>中<code>变量</code>的命名和前面第一章所学的<code>标识符</code>命名规则是一样的，不过还是有一些不同，总结下来规则与规范一共有六点：</p>
 <ol>
 <li><p>由字母，下划线，美元符号（$），数字组成，但第一个字符不能是数字。</p>
@@ -441,11 +441,11 @@
 <li><p>变量一定要给自己一个确定的类型。</p>
 <h2 id="JAVA中的数据类型"><a href="#JAVA中的数据类型" class="headerlink" title="JAVA中的数据类型"></a>JAVA中的数据类型</h2><p><code>Java</code>基本类型共有八种，基本类型可以分为三类，字符类型<code>char</code>，布尔类型<code>boolean</code>以及数值类型<code>byte、short、int、long、float、double</code>。数值类型又可以分为整数类型<code>byte、short、int、long</code>和浮点数类型<code>float、double</code>。  </p>
 <p><code>基本类型不包括String</code></p>
-<h2 id="java类型转换"><a href="#java类型转换" class="headerlink" title="java类型转换"></a>java类型转换</h2><p><img src="C:\Users\WLei224\AppData\Roaming\Typora\typora-user-images\image-20220617152252543.png" alt="image-20220617152252543"></p>
+<h2 id="java类型转换"><a href="#java类型转换" class="headerlink" title="java类型转换"></a>java类型转换</h2><p><img src="/2022/09/07/Educoder/Users\WLei224\AppData\Roaming\Typora\typora-user-images\image-20220617152252543.png" alt="image-20220617152252543"></p>
 </li>
 </ol>
 <p>强制类型转换就是将：<strong>表数范围大的数向表数范围小的进行转换</strong>。  </p>
-<h2 id=""><a href="#" class="headerlink" title=""></a><img src="C:\Users\WLei224\AppData\Roaming\Typora\typora-user-images\image-20220617152333029.png" alt="image-20220617152333029"></h2><h2 id="怎么使用Scanner"><a href="#怎么使用Scanner" class="headerlink" title="怎么使用Scanner"></a>怎么使用Scanner</h2><p>​        第一种方法：</p>
+<h2 id><a href="#" class="headerlink" title></a><img src="/2022/09/07/Educoder/Users\WLei224\AppData\Roaming\Typora\typora-user-images\image-20220617152333029.png" alt="image-20220617152333029"></h2><h2 id="怎么使用Scanner"><a href="#怎么使用Scanner" class="headerlink" title="怎么使用Scanner"></a>怎么使用Scanner</h2><p>​        第一种方法：</p>
 <ol>
 <li><p>在类的声明之前，引入扫描仪（<code>Scanner</code>）：</p>
 <p><code>import java.util.Scanner;</code></p>
